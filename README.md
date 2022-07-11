@@ -6,7 +6,6 @@
 input:7
 expected result >>>>>> 2+5, 3+4
 ```
-
 ### Answer 
 ```
 function pair(input, arr, begin, end, result) {
@@ -21,13 +20,13 @@ function pair(input, arr, begin, end, result) {
 }
 const arr = [1, 2, 3, 4, 5];
 const result = pair(7, arr, 0, arr.length - 1, []);
-const output = result.map((r) => `${r[0]}+${r[1]}`).join(",");
+const output = result.map((r) => `${r[0]}+${r[1]}`).join(", ");
 console.log(output);
 ```
 
 ### Question 2
 #### 1 Given five positive integers, find the minimum and maximum values that can be calculated by summing exactly four of the five integers. The print the respective minimum and maximum values as a single line of two space-separated long integers.
-
+### Answer 
 ```
 function miniMaxSum(arr, min, max) {
   for (i = 0; i < arr.length; i++) {
@@ -52,5 +51,5 @@ const arr = [1, 3, 5, 7, 9];
 //   arr.push(Math.floor(Math.random() * 10) + 1);
 // }
 const result = miniMaxSum(arr, 0, 0);
-console.log(`${result.min} ${result.max}`);
+console.log(`${result.min}  ${result.max}`);
 ```
