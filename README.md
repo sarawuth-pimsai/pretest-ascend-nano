@@ -46,10 +46,6 @@ function miniMaxSum(arr, min, max) {
   return { min, max };
 }
 const arr = [1, 3, 5, 7, 9];
-// let arr = [];
-// for (c = 0; c <= 10000; c++) {
-//   arr.push(Math.floor(Math.random() * 10) + 1);
-// }
 const result = miniMaxSum(arr, 0, 0);
 console.log(`${result.min}  ${result.max}`);
 ```
