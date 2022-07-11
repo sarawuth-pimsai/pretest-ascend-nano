@@ -15,3 +15,6 @@ function miniMaxSum(arr, min, max) {
   }
   return { min, max };
 }
+const arr = [1, 3, 5, 7, 9];
+const result = miniMaxSum(arr, 0, 0);
+console.log(`${result.min} ${result.max}`);
