@@ -8,6 +8,18 @@ expected result >>>>>> 2+5, 3+4
 ```
 ### Answer 
 ```
+const transData = (array) => {
+  let result = {}
+  for(let i = 0; i<array.length; i++) {
+    const key = array[i]
+    if(!result[key]) {
+      result[key] = array[i]
+    } else {
+      result[key].push(array[i])
+    }
+  }
+  return result
+}
 const pair = (array, sum) => {
   let result = []
   const data = transData(array)
