@@ -41,5 +41,19 @@ const pair2 = (array, sum) => {
 console.time("b")
 const result2 = pair2(arr, 7);
 console.timeEnd("b")
-const output2 = result.map((r) => `${r[0]}+${r[1]}`).join(", ");
+const output2 = result2.map((r) => `${r[0]}+${r[1]}`).join(", ");
 console.log(output2);
+
+const pair3 = (array, sum) => {
+  let result = []
+  for(let i = 0; i < array.length; i++) {
+    const key = sum - array[i]
+    if(array.includes(key)) result.push([array[i], key])
+  }
+  return result
+}
+console.time("c")
+const result3 = pair3(arr, 7);
+console.timeEnd("c")
+const output3 = result3.map((r) => `${r[0]}+${r[1]}`).join(", ");
+console.log(output3);
